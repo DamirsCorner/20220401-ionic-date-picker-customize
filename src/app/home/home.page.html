@@ -23,8 +23,16 @@
           presentation="date"
           [(ngModel)]="date"
           locale="sl-SI"
-          [showDefaultButtons]="true"
-        ></ion-datetime>
+        >
+          <ion-buttons slot="buttons">
+            <ion-button color="primary" fill="clear" (click)="cancel()"
+              >Cancel</ion-button
+            >
+            <ion-button color="primary" fill="clear" (click)="done()"
+              >Done</ion-button
+            >
+          </ion-buttons>
+        </ion-datetime>
       </ion-accordion>
     </ion-accordion-group>
   </div>
